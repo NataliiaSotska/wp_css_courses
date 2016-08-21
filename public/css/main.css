@@ -8,3 +8,61 @@
 body {
 	font-family: Lato-Regular;
 }
+
+input:focus {
+	outline-color: #5c6bc0;
+	background-color: white; 
+}
+
+textarea:focus {
+	outline-color: #5c6bc0;
+}
+
+input:valid {
+	border: 1px solid #96a3ee;
+}
+
+input:invalid {
+	outline-color: #db3c3c;
+	border: 1px solid #db3c3c;
+	background-color: #f8f0f0;
+}
+
+:focus::-webkit-input-placeholder {color:transparent;}
+:focus::-moz-placeholder          {color:transparent;} 
+:focus:-moz-placeholder           {color:transparent;}
+:focus:-ms-input-placeholder      {color:transparent;}
+
+a {
+	color: #b2b2b2;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #5c6bc0;
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+*::selection {
+	color: #fff;
+	background-color: #5c6bc0;
+}
+
+.post-content {
+	position: relative;
+}
+
+.post-content:before {
+	content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #eeeeee;
+}
