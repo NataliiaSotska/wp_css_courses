@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" 
+	    	  content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+
+	    <title>position: absolute;</title>
+	    <style type="text/css">
+		    body {
+		    	padding: 40px;
+		    }
+
+	    	.wrap {
+	    		position: relative;
+				height: 300px;
+				width: 910px;
+	    		margin: 20px auto;
+				padding: 50px;
+				font-size: 0;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+				box-sizing: border-box;
+				border-radius: 6px;
+			}	
+
+			.orange,
+			.blue,
+			.red {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+			}
+
+			.orange {
+				background-color: #FEB100;
+			}
+
+			.blue {
+				background-color: #0078FF;
+			}
+
+			.red {
+				background-color: #FF2A00;
+			}
+
+			.orange-one{
+				top: 50px;
+				left: 50px;
+				z-index: 1;
+			}
+
+			.blue-one {
+				top: 75px;
+				left: 75px;
+				z-index: 2;
+			}
+
+			.red-one {
+				top: 100px;
+				left: 100px;
+				z-index: 3;
+			}
+
+			.orange-two {
+				top: 50px;
+				left: 200px;
+				z-index: 3;
+			}
+
+			.blue-two {
+				top: 75px;
+				left: 225px;
+				z-index: 2;
+			}
+
+			.red-two {
+				top: 100px;
+				left: 250px;
+				z-index: 1;
+			}
+
+			.orange-three {
+				top: 50px;
+				left: 350px;
+				z-index: 1;
+			}
+
+			.blue-three {
+				top: 75px;
+				left: 375px;
+				z-index: 2;
+			}
+
+			.red-three {
+				top: 100px;
+				left: 400px;
+				z-index: 1;
+			}
+
+			.orange-four {
+				top: 50px;
+				left: 500px;
+				z-index: 2;
+			}
+
+			.blue-four {
+				top: 75px;
+				left: 525px;
+				z-index: 1;
+			}
+
+			.red-four {
+				top: 100px;
+				left: 550px;
+				z-index: 2;
+			}
+
+			.traffic-lights {
+				position: relative;
+				left: 600px;
+				display: inline-block;
+				height: 210px;
+				width: 80px;
+				border: 1px solid #000;
+				box-sizing: border-box;
+			}
+
+			.light {
+				position: absolute;
+				left: 15px;
+				height: 50px;
+				width: 50px;
+				box-sizing: border-box;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+			}
+
+			.red-light {
+				top: 15px;
+				background-color: #FE0000;
+			}
+
+			.yellow-light {
+				top: 80px;
+				background-color: #FFF701;
+				border: 1px solid #FE0000;
+			}
+
+			.green-light {
+				top: 145px;
+				background-color: #35B715;
+				border: 1px solid #FE0000;
+			}
+
+			.circles {
+				position: relative;
+				left: 650px;
+				display: inline-block;
+				height: 210px;
+				width: 80px;
+			}
+
+			.circle-black {
+				position: absolute;
+				left: 5px;
+				height: 70px;
+				width: 70px;
+				background-color:  #020202;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+			}
+
+			.circle-black-1 {
+				top: 19px;
+			}
+
+			.circle-black-2 {
+				top: 70px;
+			}
+
+			.circle-black-3 {
+				top: 121px;
+			}
+
+			.circle-red {
+				position: absolute;
+				top: 29px;
+				left: 15px;
+				height: 50px;
+				width: 50px;
+				background-color: #DC0000;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				z-index: 5;
+			}
+
+			.circle-yellow {
+				 position: absolute;
+				 top: 80px;
+				 left: 15px;
+				 height: 50px;
+				 width: 50px;
+				 background-color: #FF7900;
+				 -webkit-border-radius: 50%;
+				 -moz-border-radius: 50%;
+				 border-radius: 50%;
+				z-index: 5;
+			 }
+			.circle-green {
+				position: absolute;
+				top: 131px;
+				left: 15px;
+				height: 50px;
+				width: 50px;
+				background-color: #157A2A;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				z-index: 5;
+			}
+
+	    </style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="orange orange-one"></div>
+			<div class="blue blue-one"></div>
+			<div class="red red-one"></div>
+
+			<div class="orange orange-two"></div>
+			<div class="blue blue-two"></div>
+			<div class="red red-two"></div>
+
+			<div class="orange orange-three"></div>
+			<div class="blue blue-three"></div>
+			<div class="red red-three"></div>
+
+			<div class="orange orange-four"></div>
+			<div class="blue blue-four"></div>
+			<div class="red red-four"></div>
+
+			<div class="traffic-lights">
+				<div class="light red-light"></div>
+				<div class="light yellow-light"></div>
+				<div class="light green-light"></div>
+			</div>
+
+			<div class="circles">
+				<div class="circle-black circle-black-1"></div>
+				<div class="circle-black circle-black-2"></div>
+				<div class="circle-black circle-black-3"></div>
+				<div class="circle-red"></div>
+				<div class="circle-yellow"></div>
+				<div class="circle-green"></div>
+			</div>
+		</div>
+	</body>
+</html>
