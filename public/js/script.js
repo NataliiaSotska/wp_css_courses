@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     $('.intro-bxslider').bxSlider({
         auto: true,
-        pause: 6000,
+        pause: 3000,
     });
 
 });
