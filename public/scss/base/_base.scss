@@ -1,0 +1,44 @@
+//----- General -----
+
+*::selection {
+  color: #fff;
+  background-color: #5c6bc0;
+}
+
+body {
+  background-color: #f7f9fc;
+  font-family: Lato-Regular, sans-serif;
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  color: #b2b2b2;
+  text-decoration: none;
+
+  &:hover {
+    color: #5c6bc0;
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}
+
+p {
+  font-size: 16px;
+  color: #585858;
+}
+
+
+
+
+
+

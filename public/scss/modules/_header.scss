@@ -1,0 +1,19 @@
+.main-header {
+  height: 150px;
+  padding-top: 50px;
+  background-color: #f7f9fc;
+
+  &-logo {
+    a {
+      color: #333333;
+      font-size: 42px;
+      font-family: Lato-Italic, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+
+  .burger-icon {
+    padding-top: 10px;
+  }
+}

@@ -16,3 +16,17 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+.idea/
+node_modules/
+
+.git/
+public/css/*.css.map
+bower_components/*
+
+
+gulpfile.js
+bower.json
+.bowerrc
+package.json
+
+

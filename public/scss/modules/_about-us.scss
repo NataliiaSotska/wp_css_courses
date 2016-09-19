@@ -1,0 +1,96 @@
+.archive,
+.contacts,
+.about-us,
+.search {
+  padding: 20px 50px;
+}
+
+.archive-header,
+.contacts-header,
+.about-us-header {
+  position: relative;
+}
+
+.archive-header:after,
+.contacts-header:after,
+.about-us-header:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #eee;
+}
+
+.archive-header-title,
+.contacts-header-title,
+.about-us-header-title {
+  font-family: Lato-Bold, sans-serif;
+  font-size: 30px;
+}
+
+.about-us-header-description {
+  padding-bottom: 30px;
+  font-family: Lato-Regular, sans-serif;
+  color: #a3a3a3;
+  font-size: 20px;
+}
+
+.archive-header-description,
+.contacts-header-description {
+  padding-bottom: 30px;
+  font-family: Lato-Regular, sans-serif;
+  color: #585858;
+  font-size: 20px;
+}
+
+.archive-latest-title,
+.archive-categories-title,
+.archive-latest-title,
+.archive-month-title {
+  color: #cacaca;
+  font-size: 30px;
+}
+
+.archive-latest-list li a,
+.archive-categories-list li a,
+.archive-latest-list li a,
+.archive-month-list li a {
+  color: #333;
+  font-family: Lato-Bold, sans-serif;
+  font-size: 18px;
+}
+
+.archive-latest-list li a:hover,
+.archive-categories-list li a:hover,
+.archive-latest-list li a:hover,
+.archive-month-list li a:hover {
+  color: #5c6bc0;
+}
+
+.archive-latest-list li,
+.archive-categories-list li,
+.archive-latest-list li,
+.archive-month-list li {
+  padding: 15px 0;
+}
+
+.search {
+
+  &-title {
+    font-weight: normal;
+    font-size: 24px;
+
+    span {
+      font-family: Lato-Bold, sans-serif;
+    }
+  }
+
+  &-count {
+    color: #a3a3a3;
+    font-size: 18px;
+    font-family: Lato-Italic, sans-serif;
+  }
+}

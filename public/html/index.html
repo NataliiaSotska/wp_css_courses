@@ -8,10 +8,7 @@
 
     <title>Home | Palo Alto</title>
 
-    <link rel="stylesheet" type="text/css" href="../css/grid.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-    <!--<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.6.3/css/font-awesome.min.css">-->
 
 </head>
 <body>
@@ -111,9 +108,9 @@
                 <div class="col xs-12 l-offset-1 l-10">
                     <!-- ======= Article // Post 2 ======= -->
                     <article class="card post">
-
-                        <img src="../img/img_1.jpg" alt="image" class="post-img">
-
+                        <div class="img-block">
+                            <img src="../img/img_1.jpg" alt="image" class="post-img increased-img">
+                        </div>
                         <a class="post-bookmark">I Do Observe</a>
 
                         <header class="post-header">
@@ -182,9 +179,9 @@
                 <div class="col xs-12 l-offset-1 l-10">
                     <!-- ======= Article // Post 3 ======= -->
                     <article class="card post">
-
-                        <img src="../img/img_2.jpg" alt="image map" class="post-img">
-
+                        <div class="img-block">
+                            <img src="../img/img_2.jpg" alt="image map" class="post-img">
+                        </div>
                         <a class="post-bookmark">I Do Photos</a>
 
                         <header class="post-header">
@@ -233,9 +230,9 @@
                 <div class="col xs-12 l-offset-1 l-10">
                     <!-- ======= Article // Post 4 ======= -->
                     <article class="card post">
-
-                        <img src="../img/img_3.jpg" alt="video" class="post-img">
-
+                        <div class="img-block">
+                            <img src="../img/img_3.jpg" alt="video" class="post-img">
+                        </div>
                         <a class="post-bookmark">I Do Whatch</a>
 
                         <header class="post-header">
@@ -292,7 +289,9 @@
                     <!-- ======= Article // Post 6 ======= -->
                     <article class="card post audio-post">
 
-                        <img src="../img/img_4.jpg" alt="audio" class="post-img audio">
+                        <div class="img-block">
+                            <img src="../img/img_4.jpg" alt="audio" class="post-img audio">
+                        </div>
 
                         <div class="post-bookmark">I Do Listen</div>
 
@@ -343,11 +342,24 @@
                 <div class="col xs-12 l-offset-1 l-10">
                     <!-- ======= Article // Post 7 ======= -->
                     <article class="card post">
-
-                        <div class="slider">
-                            <img src="../img/slide-2.png" alt="slider" class="post-img">
+                        <!--<div class="slider">-->
+                        <!--<img src="../img/slide-2.png" alt="slider" class="post-img">-->
+                        <!--</div>-->
+                        <div class="img-block">
+                            <div class="intro-slider">
+                                <ul class="intro-bxslider">
+                                    <li>
+                                        <img src="../img/slide-1.png" alt="slider" class="post-img">
+                                    </li>
+                                    <li>
+                                        <img src="../img/slide-2.png" alt="slider" class="post-img">
+                                    </li>
+                                    <li>
+                                        <img src="../img/slide-3.png" alt="slider" class="post-img">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-
                         <a class="post-bookmark">I Do Explore</a>
 
                         <header class="post-header">
@@ -565,6 +577,7 @@
 </div>
 <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
 <script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
 
 </body>
 </html>

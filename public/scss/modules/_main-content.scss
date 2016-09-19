@@ -1,0 +1,287 @@
+/*----- MAIN CONTENT -----*/
+
+.main {
+  background-color: #f7f9fc;
+
+  .card {
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+  }
+
+  .post {
+    position: relative;
+    padding: 30px 0;
+    margin: 10px 0;
+
+    p {
+      font-size: 16px;
+      color: #585858;
+    }
+
+    p.post-content-main-idea {
+      position: relative;
+      color: #b8b8b8;
+      padding-left: 30px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 4px;
+        background-color: #b8b8b8;
+      }
+    }
+
+    &-img {
+      width: 100%;
+      margin-top: -30px;
+    }
+
+    .img-block {
+      overflow: hidden;
+      margin-top: -30px;
+      margin-bottom: 30px;
+
+      .increased-img {
+        max-width: 142%;
+        width: 142%;
+        margin-left: -21%;
+      }
+
+      .audio {
+        max-width: 350%;
+        width: 350%;
+        margin-left: -60%;
+        margin-top: 0;
+      }
+    }
+
+    &-header {
+      margin: 15px 25px;
+
+      &-date {
+        font-family: Lato-Bold, sans-serif;
+        font-size: 18px;
+        color: #bdbdbd;
+      }
+    }
+
+    &-bookmark {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px 15px;
+      background-color: #5c6bc0;
+      color: #fff;
+      cursor: pointer;
+      z-index: 10;
+
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: #6c79c6;
+      }
+
+      &:active {
+        color: #fff;
+        background-color: #5360ac;
+      }
+    }
+
+    .quote-icon {
+      position: absolute;
+      top: 65px;
+      left: -12px;
+    }
+
+    &-quote-block {
+      margin: 70px 25px 35px 25px;
+
+      .quote {
+        font-family: Lato-Italic, sans-serif;
+
+      }
+
+      .quote-author {
+        color: #cacaca;
+      }
+    }
+
+    &-content {
+      position: relative;
+      margin: 35px 25px;
+      padding-top: 25px;
+
+      h3 {
+        font-family: Lato-Italic, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #a3a3a3;
+      }
+
+      &-img {
+        width: 100%;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #eeeeee;
+      }
+    }
+
+    &-footer {
+      margin: 15px 25px;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+      }
+
+      &-hashtags {
+        a {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    text-align: center;
+    margin: 30px 0 50px 0;
+
+    &-list {
+      li {
+        display: inline-block;
+        margin: 0 8px;
+
+        a {
+          display: block;
+          height: 40px;
+          width: 40px;
+          background-color: #fff;
+          color: #585858;
+          line-height: 40px;
+          box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+
+          &:hover {
+            background-color: #5c6bc0;
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .main {
+    .post {
+      &-content-img {
+        height: 400px;
+        width: auto;
+        float: left;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .main {
+    .post {
+      .img-block {
+        .audio {
+          width: 200%;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 544px) {
+  .main {
+    .post {
+      &-header {
+        margin: 0 90px;
+      }
+
+      &-bookmark {
+        top: 15px;
+        right: -15px;
+        padding: 10px 15px;
+        transition: all 0.2s;
+
+        &:hover {
+          top: 12px;
+          right: -18px;
+          padding: 12px 21px;
+        }
+      }
+
+      .img-block {
+        .increased-img {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .audio {
+          width: 100%;
+        }
+      }
+
+      &-header {
+        &-title {
+          font-size: 30px;
+        }
+      }
+
+      &-content {
+        margin: 0 90px;
+
+        h3 {
+          line-height: 30px;
+        }
+
+        p {
+          font-size: 17px;
+          line-height: 30px;
+        }
+      }
+
+      &-quote-block {
+        margin: 0 90px;
+
+        .quote {
+          padding-right: 170px;
+          font-size: 30px;
+        }
+      }
+
+      &-footer {
+        margin: 0 90px;
+
+        &-hashtags {
+          line-height: 57px;
+          float: right;
+          margin: 0;
+        }
+      }
+
+      .quote-icon {
+        top: 25px;
+        left: -10px;
+      }
+    }
+  }
+}

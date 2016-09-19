@@ -1,0 +1,60 @@
+.intro-slider {
+  position: relative;
+  margin-top: -30px;
+}
+
+.bx-pager-link {
+  float: left;
+  height: 8px;
+  width: 8px;
+  background:  #fff;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+.bx-pager-link.active {
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  background: transparent;
+}
+.bx-pager-item {
+  display: inline-block;
+  margin: 3px;
+}
+.bx-pager {
+  position: absolute;
+  bottom: 3vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.bx-prev {
+  display: none;
+  height: 32px;
+  width: 22px;
+  background: url('../img/bx-prev.png') no-repeat center center;
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  margin-top: -10px;
+  text-indent: -9999px;
+}
+.bx-next {
+  display: none;
+  height: 32px;
+  width: 22px;
+  background: url('../img/bx-next.png') no-repeat center center;
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  margin-top: -10px;
+  text-indent: -9999px;
+}
+
+@media (min-width: 544px) {
+  .bx-prev {
+    display: block;
+  }
+
+  .bx-next {
+    display: block;
+  }
+}

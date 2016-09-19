@@ -1,0 +1,47 @@
+// ----- Forms -----
+textarea,
+input[type="email"],
+input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border: none;
+}
+
+input[type="email"],
+input[type="text"] {
+  height: 50px;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus {
+  outline-color: #5c6bc0;
+  background-color: white;
+}
+
+textarea:focus {
+  outline-color: #5c6bc0;
+  background-color: #fff;
+}
+
+/*input:valid {*/
+/*border: 1px solid #96a3ee;*/
+/*}*/
+
+input:invalid {
+  outline-color: #db3c3c;
+  border: 1px solid #db3c3c;
+  background-color: #f8f0f0;
+}
+
+:focus::-webkit-input-placeholder {color: transparent;}
+:focus::-moz-placeholder {color: transparent;}
+:focus:-moz-placeholder {color: transparent;}
+:focus:-ms-input-placeholder {color: transparent;}
+
+.input-wrapper {
+  margin-bottom: 30px;
+}
