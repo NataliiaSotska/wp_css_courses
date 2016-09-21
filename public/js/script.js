@@ -36,17 +36,6 @@ $(document).ready(function () {
         }
     });
 
-<<<<<<< HEAD
-=======
-
-    if ($('.intro-bxslider').length > 0) {
-        $('.intro-bxslider').bxSlider({
-            auto: true,
-            pause: 3000,
-        });
-    }
->>>>>>> 1b11b25b98fc2d8164194e14fac53a6424aedee6
-
     if ($('.intro-bxslider').length > 0) {
         $('.intro-bxslider').bxSlider({
             auto: true,
