@@ -3,7 +3,7 @@
   top: 0;
   right: -240px;
   width: 240px;
-  transition: right 3s ease;
+  transition: right 350ms ease;
   background-color: #252b4d;
   z-index: 500;
 
@@ -94,7 +94,7 @@
 .page-wrapper {
   position: relative;
   right: 0;
-  transition: right 3s ease;
+  transition: right 350ms ease;
 }
 
 .close {
@@ -105,7 +105,7 @@
   right: 0;
 }
 
-@media (min-width: 320px) and (max-width: 544px) {
+@media (min-width: 420px) and (max-width: 544px) {
 
   .main-header-nav {
     right: -320px;

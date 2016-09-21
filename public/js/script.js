@@ -5,6 +5,14 @@ $(document).ready(function () {
     var $openSearch = $('.nav-search-btn');
     var $searchInput = $('input[type="search"]');
 
+
+    $(window).on('load resize', function () {
+
+        if ($closePageWrapper.hasClass('close')) {
+            $closePageWrapper.removeClass('close');
+        }
+    });
+
     $openButton.click(function (event) {
         event.preventDefault();
 
@@ -28,9 +36,12 @@ $(document).ready(function () {
         }
     });
 
-    $('.intro-bxslider').bxSlider({
-        auto: true,
-        pause: 3000,
-    });
+
+    if ($('.intro-bxslider').length > 0) {
+        $('.intro-bxslider').bxSlider({
+            auto: true,
+            pause: 3000,
+        });
+    }
 
 });
